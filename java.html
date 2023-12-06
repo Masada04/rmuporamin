@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">index</a>
+      <a href="java.html" class="w3-bar-item w3-button">java</a>
+      <a href="api.html" class="w3-bar-item w3-button">api</a>
+    </div>
+  </div>
+</div>
+ิ<br>
+<br>
+<br>
+<br>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+const xValues = ["Kalasin", "Maha sarakham", "Roi Ed", "Yasothorn", "Nakhon ratchasima"];
+const yValues = [55, 49, 44, 24, 15];
+const barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("myChart1", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Province of friends in the classroom"
+    }
+  }
+});
+
+</script>
+<br>
+<br>
+<script>
+ 
+  const aValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+  const bValues = [55, 49, 44, 24, 15];
+  const bbarColors = ["red", "green","blue","orange","brown"];
+  
+  new Chart("myChart", {
+    type: "bar",
+    data: {
+      labels: aValues,
+      datasets: [{
+        backgroundColor: bbarColors,
+        data: bValues
+      }]
+    },
+    options: {
+      legend: {display: false},
+      title: {
+        display: true,
+        text: "World Wine Production 2018"
+      }
+    }
+  });
+  </script>
+  <style>
+    #myChart {
+    float: right;
+    padding: 70px;
+  }
+  #myChart1{
+    float: left;
+  }
+  footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+  </style>
+
+
+
+
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  
+
+
+
+
+
+
+
+<!-- End page content -->
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
